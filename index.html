@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will I receive any slot this week?</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #b9f7f6;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    img {
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 10px;
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will I receive any slot this week? 🥺</h1>
+
+  <button onclick="showYes()">Of Course Mutecim 😊</button>
+  <button onclick="showNo()">Serhat Abi's Calendar is already full 😢</button>
+
+  <div id="message"></div>
+  <img id="photo" src="" alt="response image"/>
+
+  <script>
+    function showYes() {
+      document.getElementById("photo").src = "Dilan.jpg";
+      document.getElementById("photo").style.display = "block";
+      document.getElementById("message").textContent = "You're amazing Dilan! 💖 Thanks for always being there. How lucky we are to have you ✨";
+    }
+
+    function showNo() {
+      document.getElementById("photo").src = "Mute.jpg";
+      document.getElementById("photo").style.display = "block";
+      document.getElementById("message").textContent = "Oh no... 😭 Mute is crying";
+    }
+  </script>
+
+</body>
+</html>
